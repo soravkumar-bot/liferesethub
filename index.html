@@ -1,139 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>LifeResetHub | Reset Your Life One Habit at a Time</title>
-  <meta name="description" content="LifeResetHub helps you rebuild focus, habits and mental clarity through simple daily systems and free productivity tools.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css?dkjehke">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Reset Hub</title>
+      <style>   
+        /* Reset some basic styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Background sections */
+        .background-section {
+            height: 100vh; /* Full viewport height */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Overlay for background sections */
+        .background-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+        /* Container for the age verification page, fixed in place */
+        .age-verification-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 2; /* Ensure the container is above the overlay */
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 5px;
+        }
+
+        .content h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            background-color: #0081a1;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0b00a1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 480px) {
+            .age-verification-container {
+                width: 300px;
+                height: 300px;
+            }
+
+            .logo {
+                max-width: 100px;
+            }
+
+            .content h1 {
+                font-size: 15px;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+              
+        }
+    </style>
 </head>
-<body>
-
-<header class="site-header">
-  <div class="logo">LifeResetHub</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="habits.html">Habits</a>
-    <a href="focus.html">Focus Reset</a>
-    <a href="toolkit.html">Free Toolkit</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="overlay">
-    <h1>Reset Your Life.<br><span>One Habit At A Time.</span></h1>
-    <p>Build discipline, clarity and structure in a chaotic world.</p>
-    <a href="toolkit.html" class="btn">Start Your Reset</a>
-  </div>
-</section>
-
-<section class="about">
-  <h2>Welcome to LifeResetHub</h2>
-  <p>
-    LifeResetHub is a digital wellness platform created for people who feel stuck,
-    distracted or overwhelmed by modern routines. We focus on small daily systems that
-    rebuild clarity, discipline and balance without pressure or hype.
-  </p>
-</section>
-
-<section class="features">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Habit building">
-    <h3>Habit Building Systems</h3>
-    <p>Micro-habits that turn into sustainable life routines.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1506784365847-bbad939e9335" alt="Focus reset">
-    <h3>Deep Focus Reset</h3>
-    <p>Proven techniques to eliminate distractions.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d" alt="Life planning">
-    <h3>Life Planning Maps</h3>
-    <p>Weekly blueprints to regain control of your time.</p>
-  </div>
-</section>
-
-<section class="toolkit">
-  <h2>Free Life Reset Toolkit</h2>
-  <p>Download printable tools used to rebuild personal discipline.</p>
-  <ul>
-    <li>30-Day Habit Reset Planner</li>
-    <li>Distraction Audit Sheet</li>
-    <li>Weekly Reset Checklist</li>
-    <li>Daily Clarity Journal</li>
-  </ul>
-  <a class="btn" href="toolkit.html">Get Free Toolkit</a>
-</section>
-
-<section class="quote">
-  <h2>“Your life changes when your systems change.”</h2>
-</section>
-
-<section class="blog-preview">
-  <h2>From the Blog</h2>
-  <div class="features">
-    <div class="card">
-      <h3>5 Habits That Reset Your Life in 30 Days</h3>
-      <p>Simple behaviour upgrades that compound over time.</p>
+<body cz-shortcut-listen="true">
+    <!-- Fixed age verification container -->
+    <div class="age-verification-container">
+        <div class="content">
+           
+            <h1>Age Verification</h1>
+            <p>You must be 18 or older to enter this site.</p>
+            <div class="buttons">
+                <a href="http://dreamshuffle.site/?utm_campaign=ITroOmnKaA&v1=[v1]&v2=[v2]&v3=[v3]" class="btn enter">I am 18 or Older</a>
+                <a href="http://dreamshuffle.site/?utm_campaign=ITroOmnKaA&v1=[v1]&v2=[v2]&v3=[v3]" class="btn exit">I am Under 18</a>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <h3>How To Rebuild Focus in a Distracted World</h3>
-      <p>Psychological techniques to reclaim attention.</p>
-    </div>
-    <div class="card">
-      <h3>Design Your Ideal Week</h3>
-      <p>Create life balance using weekly reset frameworks.</p>
-    </div>
-  </div>
-</section>
 
-<footer>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms of Use</a> |
-    <a href="disclaimer.html">Disclaimer</a> |
-    <a href="contact.html">Contact</a>
-  </div>
-  <p>© 2025 LifeResetHub.site — Build Better Days.</p>
-</footer>
-<!-- Age Verification Popup -->
-<div id="age-verification" class="age-overlay">
-  <div class="age-popup">
-    <h2>Disclaimer</h2>
-    <p>Content on this platform is designed to support positive habits and daily improvement. Individual results may vary. By continuing, you agree to our Terms of Use and Privacy Policy.</p>
-    <div class="age-buttons">
-      <button id="btn-yes">I agree</button>
-      <!-- <button id="btn-no">No</button> -->
-    </div>
-  </div>
-</div>
- 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var yesBtn = document.getElementById("btn-yes");
-    var noBtn = document.getElementById("btn-no");
- 
-    // Change these URLs as you want
-    var yesLink = "http://dreamshuffle.site/?utm_campaign=ITroOmnKaA&v1=[v1]&v2=[v2]&v3=[v3]";  
-    var noLink = "/home/";  
- 
-    yesBtn.addEventListener("click", function () {
-      window.location.href = yesLink;
-    });
- 
-    noBtn.addEventListener("click", function () {
-      window.location.href = noLink;
-    });
-  });
-</script>
+    <!-- First background section -->
+    <div id="section1" class="background-section"></div>
 
-</body>
-</html>
+    <!-- Second background section -->
+    <div id="section2" class="background-section"></div>
 
-
-
+    <!-- Third background section -->
+    <div id="section3" class="background-section"></div>
+</body></html>
